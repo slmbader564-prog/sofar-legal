@@ -13,67 +13,185 @@
 </head>
 <body>
   <h1>Privacy Policy: Sofar</h1>
-  <p class="muted">Last updated: 22 August 2026</p>
+  <p class="muted">Last updated: 26 September 2026</p>
 
-  <p><strong>Sofar keeps your life atlas on your phone. Your places never leave your device.</strong>
-  There are no accounts, no sign-in, no analytics, no advertising, and no tracking of any kind.
-  The app works fully offline.</p>
+  <p>Sofar keeps your life atlas on your phone. There is no Sofar account, no sign-in, no
+  analytics, no advertising, no crash reporting and no tracking SDK. Logging and viewing your
+  places work offline. A few things can leave your phone: place-name lookups you can switch off,
+  Google Play for the optional purchase, and the backups, exports and shares you choose to make.
+  Two optional features, Stays and Memory echo, use your location in the background, and only
+  after you turn them on. Each is described below.</p>
 
   <h2>Information we collect</h2>
-  <p>None. Sofar does not collect, store on servers, transmit, or share any personal data.
-  We have no servers. Everything the app records lives only on your device.</p>
+  <p>Sofar's developer collects nothing from the app. The app has no server of its own: it does
+  not send your atlas to any server run by us, and we run no server that stores it. Your atlas
+  stays on your phone unless you choose to back it up, export it or share it. The place-name
+  lookups described below send the position of one place at a time, or the words you type in
+  search, never your atlas. If you email us, we receive what you choose to send.</p>
 
   <h2>Information stored on your device</h2>
-  <p>To build your atlas, Sofar saves the following locally on your device only. It never
-  leaves your phone and is not accessible to us or anyone else:</p>
+  <p>To build your atlas, Sofar saves the following in its private storage on your phone:</p>
   <ul>
-    <li>Places you log: coordinates, timestamps, names, and any notes or photos you attach.</li>
-    <li>Statistics, medals, and streaks computed from your own places.</li>
-    <li>Your preferences (theme, notifications, and similar settings).</li>
-    <li>Whether you have unlocked Sofar Complete.</li>
+    <li>Your places and visits: coordinates and how accurate each reading was, dates and times,
+    names, street, city and country, categories, notes and tags. This includes places you log,
+    places you add by hand and places you import from photos.</li>
+    <li>New places beyond the free allowance, whether you logged or imported them. They are kept
+    with all their data as ghost pins, outside your stats, and join your atlas if you unlock
+    Sofar Complete.</li>
+    <li>For each visit imported from a photo, a reference to that photo in your library and the
+    time it was taken. Sofar keeps the reference, not a copy of the photo.</li>
+    <li>Statistics, medals, trips and streaks computed from your own places.</li>
+    <li>Your preferences, and whether you have unlocked Sofar Complete.</li>
+    <li>An installation identifier that the app uses to recognise its own backups.</li>
+    <li>Nearby place names received from Photon, kept for up to thirty days (see Place
+    names).</li>
+    <li>If you turn on Stays or Memory echo, the information they need to work, described under
+    Location.</li>
+    <li>If you add the home-screen widget, the images it shows.</li>
+    <li>Backup copies of your atlas, kept in the app's private storage and, if you choose one,
+    in a folder you pick.</li>
   </ul>
-  <p>You can export all of this data at any time from Settings, and it is removed when you
-  uninstall the app.</p>
+
+  <h2>Backups and exports</h2>
+  <p>Sofar makes a backup copy of your atlas by itself when you open the app, if something has
+  changed and its newest copy is at least 20 hours old. It also makes one just before a restore,
+  and whenever you tap Back up now in Settings. It keeps its newest seven copies, plus the two
+  most recent copies made before a restore, in its private storage, and removes older ones. If
+  you choose a backup folder, Sofar also writes each new copy there. That folder can belong to
+  a cloud storage app, which then syncs it under its own policy. Sofar never deletes files in a
+  folder you chose, and Stop using folder leaves the copies already there.</p>
+  <p>You can also export your places from Settings at any time as JSON, GPX or CSV, and send the
+  file to an app you choose. The JSON file is the complete backup; GPX and CSV are for other apps
+  and do not restore an atlas. Backup and export files are ordinary readable files that Sofar
+  does not encrypt. They can contain your coordinates, dates, notes, visits you moved to the
+  trash, ghost pins, photo references, your preferences and the installation identifier, so keep
+  them somewhere you trust. When you restore from a backup, Sofar first saves a copy of your
+  current atlas, then adds what the file holds, recognising places and visits that are already
+  on your phone so they are not doubled.</p>
+  <p>Sofar turns off Android's cloud backup for its own data, so Android does not copy it to your
+  Google account; a phone maker's device-to-device transfer may still copy it.</p>
 
   <h2>Location</h2>
-  <p>Sofar uses your location only while you are using the app, only at the moment you tap
-  to log a place. There is no background location tracking, ever. If you enable the optional
-  nearby memories feature, the app registers a small number of places with your phone so
-  Android can notify you when you are near one; that processing happens on your device.</p>
+  <p>When you tap Log, in the app, on the home-screen widget or on the quick settings tile, Sofar
+  reads your phone's location, and for up to a minute afterwards it listens for a more accurate
+  reading of the same spot. It also reads your location once when you ask it to use your current
+  position while adding a place by hand. Each place you add keeps its coordinates and date, so
+  your atlas is a record of the places and moments you chose to keep. Sofar does not record where
+  you go between them.</p>
+  <p>Two optional features use your location in the background: Stays and Memory echo. Both are
+  off until you turn them on. During setup, Sofar offers them on one page with both already
+  ticked, and nothing starts unless you tap Turn on and allow what Android asks for; you can tap
+  Not now instead. You can turn either one on or off at any time in Settings, under Suggestions.
+  Both need Android's permission to use location all the time, and notifications; Sofar explains
+  why before Android asks.</p>
+  <p>Memory echo: Sofar gives Android a short list of your own places, and Google Play services
+  watches for your arrival at one of them, even while Sofar is closed, so your phone can show you
+  a notification. It does not add a visit. Sofar stores the time of each such reminder so it
+  does not repeat for the same place within 30 days. When you turn Memory echo off, Sofar asks
+  Android to forget the list.</p>
+  <p>Stays: your phone's activity recognition, provided by Google Play services, tells Sofar when
+  your phone has been still for about twenty minutes. Sofar then takes one location reading in
+  the background and compares it, on your phone, with a copy of your places' positions that it
+  keeps for this purpose. If the spot is not in your atlas yet, you get a notification asking
+  whether to add it. A reading that produces no suggestion is discarded, and Sofar keeps no
+  record of your activity. While a suggestion waits for your answer, Sofar keeps its spot and the
+  time you arrived. It remembers a spot it suggested for seven days so it does not ask again, and
+  a spot you answer Not this one is never offered again. Nothing is added unless you tap the
+  suggestion. Stays is quiet from 22:00 to 08:00 and makes at most two suggestions a day. It also
+  needs Android's physical activity permission.</p>
 
   <h2>Photos</h2>
-  <p>Photo access is optional. If you allow it, Sofar reads photo location tags on your device
-  to help fill in your atlas. Photos are never uploaded anywhere.</p>
+  <p>Photo access is optional. If you allow it, Sofar reads the location and date stored in your
+  photos to suggest places, and shows small previews from your library. To find the date, it
+  reads the first 64 KB of each photo file, and the whole file only when that is not enough. All
+  of this happens on your phone. Sofar keeps a reference to each photo a visit came from, not a
+  copy, and it does not upload your photos. While photo access is allowed, each time you open
+  Sofar (at most once every six hours) it looks for new geotagged photos and shows you a card
+  with what it found; nothing is added until you open it, review the places and confirm. You can
+  turn this off in Settings with Find places in new photos. Your photo app's own syncing is
+  separate from Sofar.</p>
 
-  <h2>Leaderboards (optional)</h2>
-  <p>Sofar can connect to Google Play Games if you choose to sign in. This is off by default.
-  If you turn it on, only your totals (number of countries, places, and streets) are submitted
-  to leaderboards. Your actual places, coordinates, names, and dates are never shared.
-  Google Play Games is governed by
-  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+  <h2>Place names</h2>
+  <p>Unless you turn on Place names offline in Settings, Sofar asks your phone's built-in
+  geocoder, provided by your phone's maker and usually Google, for a street and city name. The
+  geocoder receives the exact coordinates of a place. It is asked for each new place the next
+  time Sofar opens or comes back to the screen, when you fill in missing names from Data health,
+  when you review places found in your photos, when you move the map to pick a spot for a past
+  place, and when you type in the search field for adding a past place, where it receives the
+  text you typed. Your phone's maker may use a network connection to answer, under its own
+  privacy policy. Turning on Place names offline stops every new naming request; places then
+  keep their coordinates and their country, which Sofar resolves from map data bundled inside
+  the app. It cannot undo a request that was already made.</p>
+  <p>Nearby place suggestions use OpenStreetMap data. When you log a new place, or log again at
+  a place that still has its automatic name, Sofar sends that place's coordinate, rounded to
+  about 100 metres, over an encrypted connection to Photon, a free public service run by komoot
+  at photon.komoot.io, and can show you a few nearby place names to choose from. It does the same
+  when you rename a place found in your photos, for up to 20 places each time you review. The
+  request carries the app's name and version and a contact address so the service can identify
+  the app, and the app's language when it is English, French or German. Like any internet
+  request, the service can see your phone's network address and the time. It carries no account
+  or device identifier. Rounding makes the coordinate less precise; it does not make the request
+  anonymous, and what Photon keeps is governed by komoot's own terms. Sofar keeps the answers on
+  your phone for up to thirty days, sends no request while Place names offline is on, and deletes
+  the saved answers when you turn it on. It never applies a suggestion without your tap. Map
+  data: OpenStreetMap contributors, ODbL, openstreetmap.org/copyright.</p>
 
   <h2>Purchases</h2>
-  <p>Sofar offers a single optional one-time purchase, Sofar Complete. Payments are processed
-  entirely by <strong>Google Play</strong>. We do not receive, see, or store your payment
-  details.</p>
+  <p>Sofar offers a single optional one-time purchase, Sofar Complete. Google Play processes the
+  payment; Sofar never receives, sees or stores your card or bank details. When the app starts,
+  Sofar asks Google Play whether the store is available and for the product's current price, and,
+  if the unlock is not already on this phone, whether this Google account has bought it, so a
+  purchase can be restored. Sofar receives the purchase status. The app may also ask Google Play
+  to show its review prompt, at most three times ever.</p>
+
+  <h2>Widget and quick settings tile</h2>
+  <p>If you add Sofar's home-screen widget, it shows your latest place and a summary of your
+  atlas on your home screen, where anyone who can see your screen can read it. The widget's Log
+  button and the quick settings tile open Sofar and log where you are, just like tapping Log in
+  the app.</p>
 
   <h2>Notifications</h2>
-  <p>All notifications (such as anniversaries of your own places) are generated on your device.
-  Nothing is pushed from a server, because there is no server.</p>
+  <p>Every notification Sofar shows is created on your phone by Sofar itself, from checks it runs
+  from time to time, including while the app is closed, and from Stays and Memory echo when you
+  turn them on. Nothing is pushed from a server.</p>
+
+  <h2>Sharing and feedback</h2>
+  <p>When you share a card, export a file or send feedback, Android hands the content to an app
+  you choose, and that app and its recipient handle it under their own policies. Unless you turn
+  off Home private in shares in Settings, share cards do not name or pin the places Sofar treats
+  as your home; exports and backups always contain everything. Feedback includes the app version
+  and the Android version, plus anything you add.</p>
+
+  <h2>Keeping and deleting your data</h2>
+  <p>Your atlas stays on your phone until you remove it, and you can see, correct, export and
+  delete it yourself. To remove everything Sofar holds on your phone, uninstall the app or use
+  Clear storage for Sofar in Android's settings; either one removes its database and its own
+  backup copies. Inside the app, Move to trash takes a visit out of your atlas, but the visit is
+  kept, in the app and in its backups, so you can restore it later.
+  Removing an imported photo under Imported photos in Settings deletes the visit it created, and
+  the place too when that was its last visit. Sofar's own backup copies can still hold something
+  you removed until they are replaced. Files you exported or shared, and copies in a backup
+  folder you chose, are yours: Sofar cannot delete them, so delete them where you keep them.</p>
 
   <h2>Children</h2>
-  <p>Sofar is suitable for a general audience. Because the app sends no data off the device,
-  it collects no data from children.</p>
+  <p>Sofar is not directed at children under 13, and we do not knowingly collect information
+  from them. It has no account, no advertising and no analytics.</p>
 
   <h2>Third parties</h2>
-  <p>Sofar contains no third-party analytics, advertising, or tracking SDKs. The only third
-  party involved is Google Play, which distributes the app, processes the optional purchase,
-  and, only if you opt in, operates the leaderboards.</p>
+  <p>Sofar contains no third-party analytics, advertising, crash reporting or tracking SDKs. The
+  third parties that can be involved are: Google Play, which distributes the app, processes the
+  optional purchase and shows the review prompt; Google Play services, which watches your Memory
+  echo places and provides the activity recognition and the location reading for Stays when you
+  turn those on; komoot's Photon service, for nearby place names, which receives a rounded
+  coordinate as described under Place names; your phone's geocoder service, for street and city
+  names; the storage provider behind a backup folder you choose; and any app you share a file or
+  feedback with. Map data by OpenStreetMap contributors, ODbL.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version will be posted at this URL with a new date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy: <a href="mailto:slmbader564@gmail.com">slmbader564@gmail.com</a></p>
+  <p>To reach us about this policy or your data, email
+  <a href="mailto:slmbader564@gmail.com">slmbader564@gmail.com</a>.</p>
 </body>
 </html>
